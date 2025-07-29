@@ -1,11 +1,12 @@
+/* Базові стилі */
 body {
   font-family: Roboto, sans-serif;
   color: #434455;
   background-color: #fff;
 }
 
-.page-header {
-  border-bottom: 1px solid #e7e9fc;
+img {
+  display: block;
 }
 
 ul,
@@ -19,10 +20,7 @@ a {
   text-decoration: none;
 }
 
-img {
-  display: block;
-}
-
+/* Контейнер */
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -46,6 +44,11 @@ img {
 
 .footer-logo .logo-part {
   color: #f4f4fd;
+}
+
+/* Шапка */
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -77,6 +80,14 @@ img {
   padding: 24px 0;
 }
 
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}
+
+/* Контакти */
 .contacts {
   font-style: normal;
 }
@@ -93,13 +104,7 @@ img {
   color: #434455;
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.contacts-link:hover,
-.contacts-link:focus {
-  color: #404bbf;
-}
-
+/* Головний банер */
 .main-banner {
   background-color: #2e2f42;
   padding: 188px 0;
@@ -117,8 +122,10 @@ img {
 }
 
 .heading-level {
+  /* можна додати базові стилі для усіх заголовків */
 }
 
+/* Кнопка */
 .main-button {
   font-weight: 500;
   font-size: 16px;
@@ -142,11 +149,99 @@ img {
   background-color: #404bbf;
 }
 
+/* Секція Benefits */
 .benefits-section {
   padding: 120px 0;
 }
 
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
+
+.benefit-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.benefit-heading {
+  margin-bottom: 8px;
+}
+
+.benefit-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+}
+
+/* Секція Team */
+.team-section {
+  padding: 120px 0;
+}
+
+.team-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  border-radius: 0 0 4px 4px;
+  background-color: #fff;
+  box-shadow: 
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 1px 1px rgba(0, 0, 0, 0.16),
+    0px 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.team-info {
+  padding: 32px 0;
+}
+
+.team-name {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+.team-position {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+}
+
+/* Футер */
+.page-footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+.footer-text {
+  margin-top: 16px;
+  max-width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f4f4fd;
+}
+
+/* Прихований заголовок */
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
-  height: 1px !
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
