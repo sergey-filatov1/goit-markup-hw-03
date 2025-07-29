@@ -1,3 +1,7 @@
+:root {
+  --accent-color: #4d5ae5;
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: #434455;
@@ -110,6 +114,7 @@ img {
   max-width: 264px;
 }
 
+/* ==== SECTION: MAIN BANNER ==== */
 
 .main-banner {
   background-color: #2e2f42;
