@@ -1,16 +1,14 @@
-/* Базові стилі */
+:root {
+  --accent-color: #4d5ae5;
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: #434455;
   background-color: #fff;
 }
 
-img {
-  display: block;
-}
-
-ul,
-ol {
+ul, ol {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -20,14 +18,16 @@ a {
   text-decoration: none;
 }
 
-/* Контейнер */
+img {
+  display: block;
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* Логотип */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -35,7 +35,7 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .header-logo .logo-part {
@@ -46,7 +46,6 @@ a {
   color: #f4f4fd;
 }
 
-/* Шапка */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -80,14 +79,6 @@ a {
   padding: 24px 0;
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.contacts-link:hover,
-.contacts-link:focus {
-  color: #404bbf;
-}
-
-/* Контакти */
 .contacts {
   font-style: normal;
 }
@@ -104,7 +95,27 @@ a {
   color: #434455;
 }
 
-/* Головний банер */
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}
+
+.page-footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  max-width: 264px;
+}
+
+/* ==== SECTION: MAIN BANNER ==== */
+
 .main-banner {
   background-color: #2e2f42;
   padding: 188px 0;
@@ -116,132 +127,31 @@ a {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #fff;
   max-width: 496px;
   margin: 0 auto;
 }
 
-.heading-level {
-  /* можна додати базові стилі для усіх заголовків */
-}
-
-/* Кнопка */
 .main-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  background-color: #4d5ae5;
   padding: 16px 32px;
-  border: none;
-  border-radius: 4px;
-
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  margin: 24px auto 0;
-  cursor: pointer;
+  margin: 48px auto 0;
 }
 
 .main-button:hover,
 .main-button:focus {
   background-color: #404bbf;
-}
-
-/* Секція Benefits */
-.benefits-section {
-  padding: 120px 0;
-}
-
-.benefits-list {
-  display: flex;
-  gap: 24px;
-}
-
-.benefit-item {
-  flex-basis: calc((100% - 72px) / 4);
-}
-
-.benefit-heading {
-  margin-bottom: 8px;
-}
-
-.benefit-text {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #434455;
-}
-
-/* Секція Team */
-.team-section {
-  padding: 120px 0;
-}
-
-.team-title {
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.11;
-  color: #2e2f42;
-  margin-bottom: 72px;
-}
-
-.team-list {
-  display: flex;
-  gap: 24px;
-}
-
-.team-item {
-  border-radius: 0 0 4px 4px;
-  background-color: #fff;
-  box-shadow: 
-    0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 1px 1px rgba(0, 0, 0, 0.16),
-    0px 1px 6px rgba(0, 0, 0, 0.08);
-}
-
-.team-info {
-  padding: 32px 0;
-}
-
-.team-name {
-  text-align: center;
-  margin-bottom: 8px;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #2e2f42;
-}
-
-.team-position {
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #434455;
-}
-
-/* Футер */
-.page-footer {
-  background-color: #2e2f42;
-  padding: 100px 0;
-}
-
-.footer-text {
-  margin-top: 16px;
-  max-width: 264px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #f4f4fd;
-}
-
-/* Прихований заголовок */
-.visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
 }
