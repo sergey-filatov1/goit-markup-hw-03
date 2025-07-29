@@ -1,3 +1,7 @@
+:root {
+  --accent-color: #4d5ae5;
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: #434455;
@@ -31,7 +35,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .header-logo .logo-part {
@@ -40,6 +44,10 @@ img {
 
 .footer-logo .logo-part {
   color: #f4f4fd;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -94,98 +102,6 @@ img {
   color: #404bbf;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #fff;
-}
-
-.main-banner {
-  background-color: #2e2f42;
-  padding: 188px 0;
-  text-align: center;
-}
-
-.main-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #fff;
-  background-color: #4d5ae5;
-  padding: 16px 32px;
-  border: none;
-  border-radius: 4px;
-}
-
-button:hover,
-button:focus {
-  cursor: pointer;
-  background-color: #404bbf;
-}
-
-.benefit-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.benefit-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-.benefit-heading {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  text-transform: capitalize;
-}
-
-.team-section {
-  background-color: #f4f4fd;
-  padding: 120px 0;
-}
-
-.team-card {
-  background-color: #ffffff;
-}
-
-.team-heanding {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.team-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
 .page-footer {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -196,4 +112,46 @@ button:focus {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+/* ==== SECTION: MAIN BANNER ==== */
+
+.main-banner {
+  background-color: #2e2f42;
+  padding: 188px 0;
+  text-align: center;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
+}
+
+.main-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding: 16px 32px;
+  margin: 48px auto 0;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: #404bbf;
 }
