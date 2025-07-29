@@ -1,53 +1,156 @@
-
-img{
-  display: block;
+:root {
+  --accent-color: #4d5ae5;
 }
 
 body {
   font-family: Roboto, sans-serif;
   color: #434455;
   background-color: #fff;
-  margin: 0;
 }
 
 ul, ol {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
-
-.page-header {
-  border-bottom: 1px solid #e7e9fc;
+img {
+  display: block;
 }
 
-
-.header-container {
-  display: flex;
+.container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-items: center;
 }
 
-
-.header-nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-}
-
-
-.header-logo {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.header-logo .logo-part {
+  color: #2e2f42;
+}
+
+.footer-logo .logo-part {
+  color: #f4f4fd;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 76px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding: 24px 0;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}
+
+.page-footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  max-width: 264px;
+}
+
+
+.main-banner {
+  background-color: #2e2f42;
+  padding: 188px 0;
+  text-align: center;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
+}
+
+.main-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding: 16px 32px;
+  margin: 48px auto 0;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: #404bbf;
+}
