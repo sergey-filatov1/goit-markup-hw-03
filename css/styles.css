@@ -2,7 +2,7 @@ body {
   font-family: Roboto, sans-serif;
   color: #434455;
   background-color: #fff;
-} 
+}
 
 img{
   display: block;
@@ -68,12 +68,13 @@ font-size: 18px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #4d5ae5;
+color: #4b5ae5;
 }
 
 .header-logo .logo-part{
   color: #2e2f42;
 }
+
 .footer-logo .logo-part{
   color: #f4f4fd;
 }
@@ -109,6 +110,12 @@ color: #434455;
   color: #404bbf;
 }
 
+.team-title{
+  max-width: 496px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
 h1{
 font-weight: 700;
 font-size: 56px;
@@ -120,6 +127,7 @@ color: #fff;
 
 .main-banner{
 background-color: #2e2f42;
+padding: 188px 0;
 }
 
 .main-button{
@@ -129,6 +137,9 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
 background-color: #4d5ae5;
+border-radius: 4px;
+cursor: pointer;
+margin: 0 auto;
 }
 
 button:hover,
