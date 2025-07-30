@@ -167,6 +167,19 @@ button:focus {
   background-color: #404bbf;
 }
 
+.benefits-section{
+  padding: 120px 0;
+}
+
+.benefit-list{
+  display: flex;
+  gap: 24px;
+}
+
+.benefit-item{
+  flex-basis: calc((100% - 72px) / 4);
+}
+
 .benefit-title{
 font-weight: 700;
 font-size: 36px;
@@ -189,6 +202,7 @@ color: #2e2f42;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-title{
