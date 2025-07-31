@@ -276,6 +276,10 @@ color: #2e2f42;
   color: #434455;
 }
 
+.portfolio-section {
+  padding: 120px 0;
+}
+
 .portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
